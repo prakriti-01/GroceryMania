@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  grocerymaniamain:
+    image: grocerymaniamain
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3030:3000
